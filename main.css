@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap');
+
+
+img {
+  width: 150px;
+}
+
+body {
+  background-color: snow;
+  color: slategray;
+  font-family: 'Baloo 2', cursive;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+}
+
+/*
+  outer area start 
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+footer {
+  padding: 1em;
+}
+
+/*
+  outer area end
+*/
+
+/*
+ nav area start
+*/
+
+aside {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  width: 100%;
+}
+
+ul.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.menu-list > li:hover {
+  color: mediumvioletred;
+
+} 
+
+/*
+ nav area end 
+*/
+
+/*
+ main area start
+*/
+main {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+main > div {
+  background-color: snow;
+}
+
+.top-row {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row img {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+}
+
+.middle-row {
+  flex-grow: 2;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.middle-row img {
+  flex: 1 1 50%;
+  max-width: 450px;
+}
+
+.bottom-row {
+  flex-grow: 1;
+  display: flex;
+  gap: 1em;
+}
+
+.bottom-row img {
+  flex: 1 1 33%;
+}
+/*
+ main area end
+*/
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  ul.menu-list {
+    list-style: none;
+    display: block;
+    padding: 0 2em;
+  }
+}
